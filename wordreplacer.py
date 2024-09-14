@@ -37,10 +37,10 @@ def create_new_docx(base_doc, target_word, replacement_content):
 st.title("Word Replacer in .docx")
 
 # File upload for base document
-base_file = st.file_uploader("Upload the base .docx file", type="docx")
+base_file = st.file_uploader("Upload the file with word to be replaced (.docx file)", type="docx")
 
 # File upload for replacement document
-replacement_file = st.file_uploader("Upload the replacement .docx file", type="docx")
+replacement_file = st.file_uploader("Upload the replacement (.docx) file", type="docx")
 
 # Text input for word to replace
 target_word = st.text_input("Enter the word to replace")
